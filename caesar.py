@@ -8,8 +8,6 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
             'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 # Function to calculate new message
-
-
 def caesar(txt, shft, dir):
     # Empty string for end result
     end_text = ""
