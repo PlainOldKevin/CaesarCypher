@@ -27,7 +27,7 @@ def caesar(txt, shft, dir):
             position = alphabet.index(char)
             # Find position of letter after shifting (ex. shift=5, then 'a' becomes 'f')
             new_position = position + shft
-            # Add letter to the end of the new string created before the for loop
+            # Add the letter to the end of the new string created before the for loop
             end_text += alphabet[new_position]
 
     # Print result
@@ -44,7 +44,7 @@ while end == 'yes':
     shift = int(input("Type the shift number:\n"))
 
     # If the shift number is greater than 26 it will cause an IndexOutOfRange
-    # The '%26' makes the dunction work the same way (encoding or decoding )
+    # The '%= 26' makes the function work the same way (encoding or decoding )
     if shift > 26:
         shift %= 26
 
