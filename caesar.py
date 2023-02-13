@@ -11,6 +11,11 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 def caesar(txt, shft, dir):
     # Empty string for end result
     end_text = ""
+    # Check if user wants to decode
+    # The shift amount will change based on this information
+    if dir == "decode":
+        # Instead of going forward a certain amount (say 5), go backwards (-5)
+        shft *= -1
     # Loop thru original word
     for char in txt:
         # Ignore numbers/letters/symbols
